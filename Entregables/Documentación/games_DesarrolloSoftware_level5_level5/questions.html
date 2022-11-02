@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the questions property from the level5 library, for the Dart programming language.">
+  <title>questions property - level5 library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">prueba</a></li>
+    <li><a href="../games_DesarrolloSoftware_level5_level5/games_DesarrolloSoftware_level5_level5-library.html">level5</a></li>
+    <li class="self-crumb">questions property</li>
+  </ol>
+  <div class="self-name">questions</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">questions</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+        <section class="multi-line-signature">
+          <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../games_DesarrolloSoftware_level5_level5/Question-class.html">Question</a></span>&gt;</span>
+          <span class="name ">questions</span>
+          <div class="features">final</div>
+
+        </section>
+        
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final questions = [
+  &#47;&#47;para preguntas con imagen se puede usar la clase Question
+  &#47;&#47; para preguntas sin imagen, se puede usar otra clase comno QuestionNoIMG
+
+  &#47;&#47;Pregunta 1
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenes&#47;t1.png&quot;),
+      text:
+          &quot;1. Dentro del paradigma de orientación a objetos Un método puede ser redefinido en una subclase si es marcado en la superclase como &quot;,
+      options: [
+        const Option(text: &#39;A. abreviado. &#39;, isCorrect: false),
+        const Option(text: &#39;B. sobrecargado. &#39;, isCorrect: false),
+        const Option(text: &#39;C. estático.  &#39;, isCorrect: false),
+        const Option(text: &#39;D. abstracto&#39;, isCorrect: true)
+      ]),
+
+  &#47;&#47;Pregunta 2
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenes&#47;t2.png&quot;),
+      text:
+          &quot;2. Para recorrer una colección sin depender de su implementación, se puede utilizar un patrón de diseño de tipo &quot;,
+      options: [
+        const Option(
+            text:
+                &#39;A. prototipo, porque conviene realizar ensayos de recorridos antes de decidir una implementación definitiva. &#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;B. interfaz, porque de esta manera se establece un comportamiento abstracto que puede implementarse posteriormente.  &#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;C. iterador, porque este define operaciones de avance, retroceso y detección de terminación en una colección abstracta.  &#39;,
+            isCorrect: true),
+        const Option(
+            text:
+                &#39;D. fachada, porque este abstrae la selección de los servicios de un sistema sin importar su implementación&#39;,
+            isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 3
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenes&#47;e6.jpeg&quot;),
+      text:
+          &quot;3. Cuando un cliente define un conjunto de objetivos generales para el desarrollo de software, pero no logra identificar los requisitos de entrada, procesamiento o salida detalladamente, el mejor proceso de desarrollo de software para este caso es el modelo de&quot;,
+      options: [
+        const Option(text: &#39; A. proceso unificado. &#39;, isCorrect: false),
+        const Option(text: &#39;B. prototipos.&#39;, isCorrect: true),
+        const Option(text: &#39;C. cascada. &#39;, isCorrect: false),
+        const Option(
+            text: &#39;D. desarrollo basado en componentes.&#39;, isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 4
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenes&#47;p4.jpg&quot;),
+      text:
+          &#39;4. En el modelo de la cascada, a veces llamado ciclo de vida clásico  seleccione la afirmación correcta &#39;,
+      options: [
+        const Option(
+            text: &#39;A. Capa de aplicación, Capa de presentación: &#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;B. Se caracterizan por la manera en la que permiten desarrollar versiones cada vez más completas del software.&#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;C. combina elementos de los flujos de proceso lineal y paralelo&#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;D. comienza con la especificación de los requerimientos por parte del cliente y avanza a través de planeación, modelado, construcción y despliegue, para concluir con el apoyo del software terminado&#39;,
+            isCorrect: true)
+      ]),
+
+  &#47;&#47;Pregunta 5
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenes&#47;t4.jpg&quot;),
+      text:
+          &quot;5. En el modelo de proceso incremental,   seleccione la afirmación correcta&quot;,
+      options: [
+        const Option(
+            text:
+                &#39;A. Se caracterizan por la manera en la que permiten desarrollar versiones cada vez más completas del software&#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39; B. aplica secuencias lineales en forma escalonada a medida que avanza el calendario de actividades&#39;,
+            isCorrect: true),
+        const Option(
+            text:
+                &#39; C. los métodos de la clase pueden haber sido redefinidos.  &#39;,
+            isCorrect: false),
+        const Option(text: &#39;D. ninguna de las anteriores&#39;, isCorrect: false)
+      ]),
+];</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">prueba</a></li>
+  <li><a href="../games_DesarrolloSoftware_level5_level5/games_DesarrolloSoftware_level5_level5-library.html">level5</a></li>
+  <li class="self-crumb">questions property</li>
+</ol>
+
+
+    <h5>level5 library</h5>
+    <ol>
+  <li class="section-title"><a href="../games_DesarrolloSoftware_level5_level5/games_DesarrolloSoftware_level5_level5-library.html#classes">Classes</a></li>
+  <li><a href="../games_DesarrolloSoftware_level5_level5/level5-class.html">level5</a></li>
+  <li><a href="../games_DesarrolloSoftware_level5_level5/Option-class.html">Option</a></li>
+  <li><a href="../games_DesarrolloSoftware_level5_level5/OptionsWidget-class.html">OptionsWidget</a></li>
+  <li><a href="../games_DesarrolloSoftware_level5_level5/Question-class.html">Question</a></li>
+  <li><a href="../games_DesarrolloSoftware_level5_level5/QuestionWidget-class.html">QuestionWidget</a></li>
+  <li><a href="../games_DesarrolloSoftware_level5_level5/ResultPage-class.html">ResultPage</a></li>
+
+
+
+
+  <li class="section-title"><a href="../games_DesarrolloSoftware_level5_level5/games_DesarrolloSoftware_level5_level5-library.html#properties">Properties</a></li>
+  <li><a href="../games_DesarrolloSoftware_level5_level5/questions.html">questions</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    prueba
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

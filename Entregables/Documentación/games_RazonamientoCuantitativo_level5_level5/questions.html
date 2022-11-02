@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the questions property from the level5 library, for the Dart programming language.">
+  <title>questions property - level5 library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">prueba</a></li>
+    <li><a href="../games_RazonamientoCuantitativo_level5_level5/games_RazonamientoCuantitativo_level5_level5-library.html">level5</a></li>
+    <li class="self-crumb">questions property</li>
+  </ol>
+  <div class="self-name">questions</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">questions</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+        <section class="multi-line-signature">
+          <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../games_RazonamientoCuantitativo_level5_level5/Question-class.html">Question</a></span>&gt;</span>
+          <span class="name ">questions</span>
+          <div class="features">final</div>
+
+        </section>
+        
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final questions = [
+  &#47;&#47;para preguntas con imagen se puede usar la clase Question
+  &#47;&#47; para preguntas sin imagen, se puede usar otra clase comno QuestionNoIMG
+
+  &#47;&#47;Pregunta 1
+  Question(
+      img:
+          (&quot;https:&#47;&#47;educacion30.b-cdn.net&#47;wp-content&#47;uploads&#47;2022&#47;04&#47;cursos-de-algebra.jpg&quot;),
+      text: &quot;1. Dado que 2^x * 2^y = 32, entonces x + y es igual a: &quot;,
+      options: [
+        const Option(text: &#39;A. 8&#39;, isCorrect: false),
+        const Option(text: &#39;B. 7&#39;, isCorrect: false),
+        const Option(text: &#39;C. 5&#39;, isCorrect: true),
+        const Option(text: &#39;D. 4&#39;, isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 2
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenesrazonamiento&#47;1.png&quot;),
+      text:
+          &quot;2. En el dibujo hay un trapecio rectángulo (AD || BC). Según estos datos y los datos del dibujo ¿cuál es el área del trapecio (en m^2)? &quot;,
+      options: [
+        const Option(text: &#39;A. 150&#39;, isCorrect: false),
+        const Option(text: &#39;B. 120&#39;, isCorrect: true),
+        const Option(text: &#39;C. 108&#39;, isCorrect: false),
+        const Option(text: &#39;D. 96&#39;, isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 3
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenesrazonamiento&#47;1.png&quot;),
+      text:
+          &quot;3. La distancia entre los puntos A y B es de 400 m. La distancia entre los puntos B y C es de 300 m. De aquí que la distancia entre los puntos A y C es necesariamente. &quot;,
+      options: [
+        const Option(text: &#39;A. 100m&#39;, isCorrect: false),
+        const Option(text: &#39;B. 500m&#39;, isCorrect: false),
+        const Option(text: &#39;C. 700m&#39;, isCorrect: false),
+        const Option(
+            text: &#39;D. No se puede determinar a partir de los datos&#39;,
+            isCorrect: true)
+      ]),
+
+  &#47;&#47;Pregunta 4
+  Question(
+      img:
+          (&quot;https:&#47;&#47;c.pxhere.com&#47;photos&#47;68&#47;7a&#47;assorted_assortment_baked_bakery_cakes_chocolate_chocolate_cupcakes_close_up-1549455.jpg!d&quot;),
+      text:
+          &#39;4. En la Pastelería El Gran Sabor las empanadas tienen un costo de 1500 pesos y los pandebonos un costo de 💲1000 pesos. Si en total se vendieron 400 productos y se recaudaron 💲500.000, ¿cuántas empanadas y pandebonos fueron comprados en esta pastelería? &#39;,
+      options: [
+        const Option(
+            text: &#39;A. 300 pandebonos y 300 empanadas. &#39;, isCorrect: false),
+        const Option(
+            text: &#39;B. 200 pandebonos y 200 empanadas.&#39;, isCorrect: false),
+        const Option(
+            text: &#39;C. 600 pandebonos y 400 empanadas.&#39;, isCorrect: true),
+        const Option(
+            text: &#39;D. 550 pandebonos y 450 empanadas.&#39;, isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 5
+  Question(
+      img:
+          (&quot;https:&#47;&#47;c.pxhere.com&#47;photos&#47;1e&#47;b3&#47;school_class_school_children_bali_indonesia_pupils_students_learning-1237486.jpg!d&quot;),
+      text:
+          &quot;5. En un Colegio de Puerto Rico, la profesora quiere saber quién es el menor de sus estudiantes, por lo que le pregunta a uno de ellos al respecto. Juan le responde que él es mayor que Catalina y que José es menor que Daniela, quien es menor que Pedro, el cual es mayor que Catalina, quien es mayor que Daniela y que Pedro es menor que él. ¿Cuál es el orden de mayor a menor de los estudiantes?  &quot;,
+      options: [
+        const Option(
+            text: &#39;A. Catalina, Juan, Pedro, José, Daniela.&#39;, isCorrect: false),
+        const Option(
+            text: &#39;B. Pedro, Juan, Catalina, Daniela, José.&#39;, isCorrect: false),
+        const Option(
+            text: &#39;C. Juan, Catalina, Pedro, José, Daniela.&#39;, isCorrect: false),
+        const Option(
+            text: &#39;D. Juan, Pedro, Catalina, Daniela, José.&#39;, isCorrect: true)
+      ]),
+];</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">prueba</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level5_level5/games_RazonamientoCuantitativo_level5_level5-library.html">level5</a></li>
+  <li class="self-crumb">questions property</li>
+</ol>
+
+
+    <h5>level5 library</h5>
+    <ol>
+  <li class="section-title"><a href="../games_RazonamientoCuantitativo_level5_level5/games_RazonamientoCuantitativo_level5_level5-library.html#classes">Classes</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level5_level5/level5-class.html">level5</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level5_level5/Option-class.html">Option</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level5_level5/OptionsWidget-class.html">OptionsWidget</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level5_level5/Question-class.html">Question</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level5_level5/QuestionWidget-class.html">QuestionWidget</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level5_level5/ResultPage-class.html">ResultPage</a></li>
+
+
+
+
+  <li class="section-title"><a href="../games_RazonamientoCuantitativo_level5_level5/games_RazonamientoCuantitativo_level5_level5-library.html#properties">Properties</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level5_level5/questions.html">questions</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    prueba
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

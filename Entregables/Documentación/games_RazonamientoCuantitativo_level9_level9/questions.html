@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the questions property from the level9 library, for the Dart programming language.">
+  <title>questions property - level9 library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">prueba</a></li>
+    <li><a href="../games_RazonamientoCuantitativo_level9_level9/games_RazonamientoCuantitativo_level9_level9-library.html">level9</a></li>
+    <li class="self-crumb">questions property</li>
+  </ol>
+  <div class="self-name">questions</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">questions</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+        <section class="multi-line-signature">
+          <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../games_RazonamientoCuantitativo_level9_level9/Question-class.html">Question</a></span>&gt;</span>
+          <span class="name ">questions</span>
+          <div class="features">final</div>
+
+        </section>
+        
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final questions = [
+  &#47;&#47;para preguntas con imagen se puede usar la clase Question
+  &#47;&#47; para preguntas sin imagen, se puede usar otra clase comno QuestionNoIMG
+
+  &#47;&#47;Pregunta 1
+  Question(
+      img:
+          (&quot;https:&#47;&#47;upload.wikimedia.org&#47;wikipedia&#47;commons&#47;thumb&#47;a&#47;a4&#47;Men%27s_5000m_-_T11_London_2012.jpg&#47;1280px-Men%27s_5000m_-_T11_London_2012.jpg&quot;),
+      text:
+          &quot;Una prueba atlética tiene un récord mundial de 10,49 segundos y un récord olímpico de 10,50 segundos. ¿Es posible que un atleta registre un tiempo, en el mismo tipo de prueba, que rompa el récord olímpico pero no el mundial?&quot;,
+      options: [
+        const Option(
+            text:
+                &#39;Sí, porque puede registrar un tiempo menor que 10,4 y marcaría un nuevo récord.&#39;,
+            isCorrect: true),
+        const Option(
+            text:
+                &#39;Sí, porque puede registrar, por ejemplo, un tiempo de 10,497 segundos, que está entre los dos tiempos récord. &#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;No, porque no existe un registro posible entre los dos tiempos récord.&#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;No, porque cualquier registro menor que el récord olímpico va a ser menor que el récord mundial.&#39;,
+            isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 2
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenesrazonamiento&#47;6.png&quot;),
+      text:
+          &quot;En una institución educativa hay dos cursos en grado undécimo. El número de hombres y mujeres de cada curso se relaciona en la tabla presentada. La probabilidad de escoger un estudiante de grado undécimo, de esta institución, que sea mujer es de 3&#47;5. Este valor corresponde a la razón entre el número total de mujeres y  &quot;,
+      options: [
+        const Option(
+            text: &#39;el número total de estudiantes de grado undécimo. &#39;,
+            isCorrect: true),
+        const Option(
+            text: &#39;el número total de hombres de grado undécimo. &#39;,
+            isCorrect: false),
+        const Option(
+            text: &#39;el número total de mujeres del curso 11 B.&#39;,
+            isCorrect: false),
+        const Option(
+            text: &#39;el número total de hombres del curso 11 A.&#39;,
+            isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 3
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenesrazonamiento&#47;7_1.png&quot;),
+      text:
+          &quot;RESPONDA LAS PREGUNTAS 3 Y 4 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN.\nPara adquirir un crédito por 💲6.000.000, Ángela solicita en una entidad financiera información sobre las modalidades de pago para crédito. Un asesor le da la siguiente información.  Después de analizar la información, Ángela afirma: “Con la modalidad I, el valor de la cuota disminuirá 💲50.000 en cada mes”\nLa afirmación es correcta porque &quot;,
+      options: [
+        const Option(
+            text:
+                &#39;el interés total del crédito serían 💲300.000 y cada mes disminuiría 💲50.000. &#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;cada mes se abonarían al crédito 💲1.000.000 y el interés disminuiría en 💲50.000. &#39;,
+            isCorrect: true),
+        const Option(
+            text:
+                &#39;cada mes aumentaría el abono al crédito en 💲50.000, de manera que el interés disminuirá. &#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;el abono al crédito disminuiría 💲50.000 cada mes, al igual que el interés.&#39;,
+            isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 4
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenesrazonamiento&#47;7_1.png&quot;),
+      text: &#39;El interés total de un crédito es la cantidad de dinero que se paga adicional al valor del mismo. ¿Cuál(es) de los siguientes procesos podría utilizar la entidad, para calcular el interés total del crédito de Ángela, si se pagara con la modalidad II? &#39; +
+          &#39;Proceso 1: calcular el 20% de 💲6.000.000.&#39; +
+          &#39;Proceso 2: calcular el 20% de 💲6.000.000 y multiplicarlo por 12. &#39; +
+          &#39;Proceso 3: calcular el valor de la cuota, multiplicarlo por 12 y al resultado restarle 💲6.000.000.&#39;,
+      options: [
+        const Option(text: &#39;1 solamente. &#39;, isCorrect: false),
+        const Option(text: &#39;2 solamente. &#39;, isCorrect: true),
+        const Option(text: &#39;1 y 3 solamente. &#39;, isCorrect: false),
+        const Option(text: &#39;2 y 3 solamente.&#39;, isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 5
+  Question(
+      img: (&quot;http:&#47;&#47;gamilibre.com&#47;imagenesrazonamiento&#47;8.png&quot;),
+      text:
+          &quot;Para fijar un aviso publicitario se coloca sobre un muro una escalera a 12 metros del suelo. Las figuras, además, muestran la situación y algunas de las medidas involucradas. ¿Cuál es el coseno del ángulo que forman el suelo y la escalera?&quot;,
+      options: [
+        const Option(text: &#39;13&#47;5&#39;, isCorrect: false),
+        const Option(text: &#39;12 &#47;5&#39;, isCorrect: false),
+        const Option(text: &#39;5&#47;13&#39;, isCorrect: true),
+        const Option(text: &#39;12&#47;13&#39;, isCorrect: false)
+      ]),
+];</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">prueba</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level9_level9/games_RazonamientoCuantitativo_level9_level9-library.html">level9</a></li>
+  <li class="self-crumb">questions property</li>
+</ol>
+
+
+    <h5>level9 library</h5>
+    <ol>
+  <li class="section-title"><a href="../games_RazonamientoCuantitativo_level9_level9/games_RazonamientoCuantitativo_level9_level9-library.html#classes">Classes</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level9_level9/level9-class.html">level9</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level9_level9/Option-class.html">Option</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level9_level9/OptionsWidget-class.html">OptionsWidget</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level9_level9/Question-class.html">Question</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level9_level9/QuestionWidget-class.html">QuestionWidget</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level9_level9/ResultPage-class.html">ResultPage</a></li>
+
+
+
+
+  <li class="section-title"><a href="../games_RazonamientoCuantitativo_level9_level9/games_RazonamientoCuantitativo_level9_level9-library.html#properties">Properties</a></li>
+  <li><a href="../games_RazonamientoCuantitativo_level9_level9/questions.html">questions</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    prueba
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

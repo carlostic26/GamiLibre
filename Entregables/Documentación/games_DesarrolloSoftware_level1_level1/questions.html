@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the questions property from the level1 library, for the Dart programming language.">
+  <title>questions property - level1 library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">prueba</a></li>
+    <li><a href="../games_DesarrolloSoftware_level1_level1/games_DesarrolloSoftware_level1_level1-library.html">level1</a></li>
+    <li class="self-crumb">questions property</li>
+  </ol>
+  <div class="self-name">questions</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-top-level-property">questions</span> top-level property 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+        <section class="multi-line-signature">
+          <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../games_DesarrolloSoftware_level1_level1/Question-class.html">Question</a></span>&gt;</span>
+          <span class="name ">questions</span>
+          <div class="features">final</div>
+
+        </section>
+        
+
+        
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">final questions = [
+  &#47;&#47;para preguntas con imagen se puede usar la clase Question
+  &#47;&#47; para preguntas sin imagen, se puede usar otra clase comno QuestionNoIMG
+
+  &#47;&#47;Pregunta 1
+  Question(text: &quot;1. ¿Qué es el Diseño de Software? &quot;, options: [
+    const Option(
+        text: &#39;A. Es el diseño que se le dan a los programas informáticos&#39;,
+        isCorrect: false),
+    const Option(
+        text:
+            &#39;B. Es el conjunto de actividades TIC dedicadas al proceso de creación, despliegue y compatibilidad de software.&#39;,
+        isCorrect: false),
+    const Option(
+        text:
+            &#39;C. Es la planificación de una solución de software, necesario para para disminuir el riesgo de desarrollos erróneos.&#39;,
+        isCorrect: true),
+    const Option(
+        text:
+            &#39;D. Son el conjunto de actividades de software dedicadas al proceso de creación, diseño, despliegue y compatibilidad electrónica&#39;,
+        isCorrect: false)
+  ]),
+
+  &#47;&#47;Pregunta 2
+  Question(
+      text:
+          &quot;2. Cuantas preguntas contiene la prueba de Desarrollo de Software del ICFES Saber PRO? &quot;,
+      options: [
+        const Option(text: &#39;A. 25&#39;, isCorrect: false),
+        const Option(text: &#39;B. 30&#39;, isCorrect: true),
+        const Option(text: &#39;C. 35&#39;, isCorrect: false),
+        const Option(text: &#39;D. 40&#39;, isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 3
+  Question(
+      text:
+          &quot;3. Cuál es la estructura de evaluación del modulo(Tomado de la guia de orientacion de modulo de razonamiento cuantitativo saber pro 2016)&quot;,
+      options: [
+        const Option(
+            text: &#39;A. Competencia, afirmación , evidencia &#39;, isCorrect: true),
+        const Option(
+            text:
+                &#39;B. Análisis y comprensión, formulación y representación, interpretación y argumentación&#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;C. Investigación y ejecución, interpretación y formulación, argumentación&#39;,
+            isCorrect: false),
+        const Option(text: &#39;D. Todas las anteriores&#39;, isCorrect: false)
+      ]),
+
+  &#47;&#47;Pregunta 4
+  Question(
+      text:
+          &#39;4. Los módulos específicos, como Diseño de Software, están dirigidos a &#39;,
+      options: [
+        const Option(
+            text:
+                &#39;A. Estudiantes que hayan aprobado por lo menos el 75 % de los créditos académicos del programa profesional universitario que cursan&#39;,
+            isCorrect: false),
+        const Option(
+            text:
+                &#39;B. Quienes presentan el examen por primera vez y que sean inscritos directamente por su IES.&#39;,
+            isCorrect: false),
+        const Option(
+            text: &#39;C. Cualquier persona que desee obtenerlos&#39;,
+            isCorrect: false),
+        const Option(text: &#39;D. A y B son ciertas&#39;, isCorrect: true)
+      ]),
+
+  &#47;&#47;Pregunta 5
+  Question(
+      text: &quot;5. El módulo Diseño de Software se oferta a los programas de &quot;,
+      options: [
+        const Option(
+            text: &#39;A. Ingeniería de sistemas, telemática y afines.&#39;,
+            isCorrect: true),
+        const Option(text: &#39;B. Ingeniería mecánica y afines&#39;, isCorrect: false),
+        const Option(text: &#39;C. Ingeniería de alimentos&#39;, isCorrect: false),
+        const Option(text: &#39;D. Derecho y arquitectura&#39;, isCorrect: false)
+      ]),
+];</code></pre>
+</section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">prueba</a></li>
+  <li><a href="../games_DesarrolloSoftware_level1_level1/games_DesarrolloSoftware_level1_level1-library.html">level1</a></li>
+  <li class="self-crumb">questions property</li>
+</ol>
+
+
+    <h5>level1 library</h5>
+    <ol>
+  <li class="section-title"><a href="../games_DesarrolloSoftware_level1_level1/games_DesarrolloSoftware_level1_level1-library.html#classes">Classes</a></li>
+  <li><a href="../games_DesarrolloSoftware_level1_level1/level1-class.html">level1</a></li>
+  <li><a href="../games_DesarrolloSoftware_level1_level1/Option-class.html">Option</a></li>
+  <li><a href="../games_DesarrolloSoftware_level1_level1/OptionsWidget-class.html">OptionsWidget</a></li>
+  <li><a href="../games_DesarrolloSoftware_level1_level1/Question-class.html">Question</a></li>
+  <li><a href="../games_DesarrolloSoftware_level1_level1/QuestionWidget-class.html">QuestionWidget</a></li>
+  <li><a href="../games_DesarrolloSoftware_level1_level1/ResultPage-class.html">ResultPage</a></li>
+
+
+
+
+  <li class="section-title"><a href="../games_DesarrolloSoftware_level1_level1/games_DesarrolloSoftware_level1_level1-library.html#properties">Properties</a></li>
+  <li><a href="../games_DesarrolloSoftware_level1_level1/questions.html">questions</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    prueba
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

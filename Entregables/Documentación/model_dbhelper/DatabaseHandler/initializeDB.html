@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the initializeDB method from the DatabaseHandler class, for the Dart programming language.">
+  <title>initializeDB method - DatabaseHandler class - dbhelper library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">prueba</a></li>
+    <li><a href="../../model_dbhelper/model_dbhelper-library.html">dbhelper</a></li>
+    <li><a href="../../model_dbhelper/DatabaseHandler-class.html">DatabaseHandler</a></li>
+    <li class="self-crumb">initializeDB method</li>
+  </ol>
+  <div class="self-name">initializeDB</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-method">initializeDB</span> method 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/sqflite_common/2.2.1+1/sqlite_api/Database-class.html">Database</a></span>&gt;</span></span>
+<span class="name ">initializeDB</span>(<wbr>)
+
+      
+
+    </section>
+    
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">Future&lt;Database&gt; initializeDB() async {
+  String path = await getDatabasesPath();
+  return openDatabase(
+    join(path, &#39;gamilibre007.db&#39;),
+    onCreate: (database, version) async {
+      const String sql = &#39;&#39;
+          &#39;CREATE TABLE scoreTable (&#39;
+          &#39; id TEXT PRIMARY KEY,&#39;
+          &#39; modulo TEXT,&#39;
+          &#39; nivel TEXT,&#39;
+          &#39; score TEXT&#39;
+          &#39;);&#39;;
+
+      await database.execute(sql);
+      const String addScoreGame = &#39;&#39;
+          &#39;INSERT INTO scoreTable(id, modulo, nivel, score) VALUES &#39;
+          &#47;&#47;son 4 valores correspondiente al puntaje segun el modulo
+          &#39;(&quot;RC1&quot;, &quot;RC&quot;, &quot;1&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;RC2&quot;, &quot;RC&quot;, &quot;2&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;RC3&quot;, &quot;RC&quot;, &quot;3&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;RC4&quot;, &quot;RC&quot;, &quot;4&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;RC5&quot;, &quot;RC&quot;, &quot;5&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;RC6&quot;, &quot;RC&quot;, &quot;6&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;RC7&quot;, &quot;RC&quot;, &quot;7&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;RC8&quot;, &quot;RC&quot;, &quot;8&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;RC9&quot;, &quot;RC&quot;, &quot;9&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;RC10&quot;, &quot;RC&quot;, &quot;10&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;RC11&quot;, &quot;RC&quot;, &quot;11&quot;, &quot;0&quot;),&#39;
+
+          &#47;&#47;son 4 valores correspondiente al puntaje segun el modulo
+          &#39;(&quot;DS1&quot;, &quot;DS&quot;, &quot;1&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;DS2&quot;, &quot;DS&quot;, &quot;2&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;DS3&quot;, &quot;DS&quot;, &quot;3&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;DS4&quot;, &quot;DS&quot;, &quot;4&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;DS5&quot;, &quot;DS&quot;, &quot;5&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;DS6&quot;, &quot;DS&quot;, &quot;6&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;DS7&quot;, &quot;DS&quot;, &quot;7&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;DS8&quot;, &quot;DS&quot;, &quot;8&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;009&quot;, &quot;DS&quot;, &quot;9&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;DS10&quot;, &quot;DS&quot;, &quot;10&quot;, &quot;0&quot;),&#39;
+          &#39;(&quot;DS11&quot;, &quot;DS&quot;, &quot;11&quot;, &quot;0&quot;)&#39;;
+
+      await database.execute(addScoreGame);
+
+      &#47;*Se recomienda eliminar la version anterior  de la base de datos mientras se testea el software
+      deleteDatabase(&quot;gamilibre12.db&quot;);*&#47;
+    },
+    version: 1,
+  );
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../../index.html">prueba</a></li>
+  <li><a href="../../model_dbhelper/model_dbhelper-library.html">dbhelper</a></li>
+  <li><a href="../../model_dbhelper/DatabaseHandler-class.html">DatabaseHandler</a></li>
+  <li class="self-crumb">initializeDB method</li>
+</ol>
+
+
+    <h5>DatabaseHandler class</h5>
+    <ol>
+
+        <li class="section-title"><a href="../../model_dbhelper/DatabaseHandler-class.html#constructors">Constructors</a></li>
+          <li><a href="../../model_dbhelper/DatabaseHandler/DatabaseHandler.html">DatabaseHandler</a></li>
+
+
+    <li class="section-title inherited">
+      <a href="../../model_dbhelper/DatabaseHandler-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title"><a href="../../model_dbhelper/DatabaseHandler-class.html#instance-methods">Methods</a></li>
+    <li><a href="../../model_dbhelper/DatabaseHandler/deleteScore.html">deleteScore</a></li>
+    <li><a href="../../model_dbhelper/DatabaseHandler/Gamilibre.html">Gamilibre</a></li>
+    <li><a href="../../model_dbhelper/DatabaseHandler/initializeDB.html">initializeDB</a></li>
+    <li><a href="../../model_dbhelper/DatabaseHandler/insertScoreLevel_1.html">insertScoreLevel_1</a></li>
+    <li><a href="../../model_dbhelper/DatabaseHandler/insertScoreLevel_2.html">insertScoreLevel_2</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../../model_dbhelper/DatabaseHandler/QueryAllScoresDS.html">QueryAllScoresDS</a></li>
+    <li><a href="../../model_dbhelper/DatabaseHandler/QueryAllScoresRC.html">QueryAllScoresRC</a></li>
+    <li><a href="../../model_dbhelper/DatabaseHandler/SelectScoreForLevelModule.html">SelectScoreForLevelModule</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+    <li><a href="../../model_dbhelper/DatabaseHandler/updateScore.html">updateScore</a></li>
+
+    <li class="section-title inherited"><a href="../../model_dbhelper/DatabaseHandler-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    prueba
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
