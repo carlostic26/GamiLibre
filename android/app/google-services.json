@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "372567303873",
+    "project_id": "gamilibre-6b1db",
+    "storage_bucket": "gamilibre-6b1db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372567303873:android:169f77991fa1b44f0e9640",
+        "android_client_info": {
+          "package_name": "com.gamilibre.blogspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372567303873-9o64rgtri6l3868iqufea4mt6d31s19f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gamilibre.blogspot",
+            "certificate_hash": "4a29cb1b1c6f961f238647990d9dfcbf3ffe357d"
+          }
+        },
+        {
+          "client_id": "372567303873-mo06lc1k6lfp3gu6rm31f8vnaatjind7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpTmlqc-Iqr5U5UdxSbEBhTBH0Y2RXGNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372567303873-mo06lc1k6lfp3gu6rm31f8vnaatjind7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
